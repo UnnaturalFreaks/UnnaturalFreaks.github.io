@@ -1,0 +1,22 @@
+body {
+  background-color: #F0E68C;
+  font-family: "Courier New", Courier, monospace;
+}
+
+header {
+  text-align: center;
+  background-color: #8B4513;
+  color: white;
+  padding: 10px;
+}
+
+main {
+  margin: 20px;
+}
+
+footer {
+  text-align: center;
+  background-color: #8B4513;
+  color: white;
+  padding: 10px;
+}
