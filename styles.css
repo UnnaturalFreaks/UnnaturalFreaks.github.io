@@ -6,11 +6,25 @@ body {
 
 header, footer {
   text-align: center;
-  background-color: #008000;
-  color: #ffffff;
+  background-color: #0e7518;
+  color: #000000;
   padding: 10px;
 }
 
 main {
-  margin: 20px;
+  display: flex;
+}
+
+.left-column {
+  background-color: #000000;
+  color: #ffffff;
+  width: 25%;
+  padding: 20px;
+}
+
+.right-column {
+  background-color: #000000;
+  color: #ffffff;
+  width: 75%;
+  padding: 20px;
 }
