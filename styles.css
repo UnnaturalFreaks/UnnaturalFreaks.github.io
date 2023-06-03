@@ -1,14 +1,19 @@
 body {
   background-color: #000000;
   color: #ffffff;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Times New Roman, serif;
 }
 
 header, footer {
   text-align: center;
-  background-color: #0e7518;
-  color: #000000;
+  background-color: #000000;
   padding: 10px;
+  border-top: 2px solid #0e7518;
+  border-bottom: 2px solid #0e7518;
+}
+
+header h1, footer p {
+  color: #ffffff;
 }
 
 main {
@@ -18,8 +23,12 @@ main {
 .left-column {
   background-color: #000000;
   color: #ffffff;
-  width: 25%;
+  width: 20%;
   padding: 20px;
+  border-right: 2px solid #ffffff;
+  font-size: 80%;
+  font-family: Times New Roman, serif;
+  text-align: justify;
 }
 
 .right-column {
