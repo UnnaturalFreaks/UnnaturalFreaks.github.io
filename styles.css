@@ -16,6 +16,11 @@ header h1, footer p {
   color: #ffffff;
 }
 
+.header-gif {
+    width: 50px;  /* adjust as needed */
+    height: 50px;  /* adjust as needed */
+}
+
 main {
   display: flex;
 }
