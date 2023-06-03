@@ -1,24 +1,61 @@
 body {
   background-color: #000000;
   color: #ffffff;
-  font-family: Times New Roman, serif;
+  font-family: 'Courier New', serif;
 }
 
-header, footer {
-  text-align: center;
+@font-face {
+  font-family: 'Destroyed Aero'; /* This can be any name you choose */
+  src: url('fonts/Destroyed Aero.ttf') format('truetype'),
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Destroyed Aero', fallback, sans-serif;
+  letter-spacing: 0.15em;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #000000;
   padding: 10px;
   border-top: 2px solid #0e7518;
   border-bottom: 2px solid #0e7518;
 }
 
-header h1, footer p {
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%; /* Adjust this value to get the desired distance between the GIFs and the title */
+}
+
+header h1 {
   color: #ffffff;
+  margin: 0;
+  padding: 0 30px; /* This adds 20px of space to the left and right of the title */
+}
+
+a {
+  color: #36BD38;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a.orange {
+  color: #FFA500;
+}
+
+a.orange:hover {
+  text-decoration: underline;
 }
 
 .header-gif {
-    width: 50px;  /* adjust as needed */
-    height: 50px;  /* adjust as needed */
+  width: 35px;
+  height: 35px;
 }
 
 main {
@@ -29,10 +66,22 @@ main {
   background-color: #000000;
   color: #ffffff;
   width: 20%;
-  padding: 20px;
-  border-right: 2px solid #ffffff;
+  padding: 20px 40px;
+  border-right: 4px solid #0e7518;
   font-size: 80%;
-  font-family: Times New Roman, serif;
+ /* font-family: 'Times New Roman', serif;*/
+}
+
+.left-column h1, 
+.left-column h2, 
+.left-column h3, 
+.left-column h4, 
+.left-column h5, 
+.left-column h6 {
+  text-align: left;
+}
+
+.left-column p {
   text-align: justify;
 }
 
@@ -40,5 +89,21 @@ main {
   background-color: #000000;
   color: #ffffff;
   width: 75%;
-  padding: 20px;
+  padding: 20px 100px 20px 50px; /*top, right, bottom, and left padding, respectively.*/
+  line-height: 1.5;
+}
+
+footer {
+  text-align: center;
+  background-color: #000000;
+  padding: 2vh 5vw; /* 2% of the viewport height and 5% of the viewport width */
+  border-top: 2px solid #0e7518;
+  border-bottom: 2px solid #0e7518;
+}
+
+footer p {
+  color: #ffffff;
+  margin: 0;
+  padding: 0 20vw; /* Changed to 5% of the viewport width */
+  font-size: 70%;
 }
