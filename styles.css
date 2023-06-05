@@ -83,6 +83,7 @@ main {
 
 .left-column p {
   text-align: justify;
+  align-items: center;
 }
 
 .right-column {
